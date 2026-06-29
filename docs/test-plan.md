@@ -34,6 +34,8 @@ Planned unit coverage:
 
 - Detector returns `alive`, `dead`, or `unknown` from fixture inputs.
 - Detector threshold boundaries do not flip state unexpectedly.
+- Detector returns `unknown` for missing samples, ambiguous samples, and samples
+  too far from calibrated references.
 - Coordinator switches to browser once for `alive -> dead`.
 - Coordinator switches back once for `dead -> alive`.
 - Coordinator does nothing for repeated states or `unknown`.

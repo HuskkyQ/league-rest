@@ -3,8 +3,8 @@
 Minimal Python CLI skeleton for a Windows-only League of Legends rest utility.
 
 The current prototype includes smoke checks and manual Windows window focus
-commands. It does not implement champion state detection, tray UI, screenshots,
-or automatic switching loops yet.
+commands plus fixture-based detector logic. It does not implement real screenshot
+capture, real game-state detection, tray UI, or automatic switching loops yet.
 
 ## Safety Boundaries
 
@@ -89,3 +89,13 @@ league-rest focus-game --title "League of Legends"
 For first verification, use a harmless substitute such as Notepad before testing
 beside League of Legends. Windowed or borderless windowed mode is recommended;
 exclusive fullscreen may prevent normal Windows focus switching.
+
+## Detector Fixture Prototype
+
+The detector prototype is pure logic. It compares fixture feature vectors against
+calibrated `alive` and `dead` reference samples and returns `alive`, `dead`, or
+`unknown`.
+
+This prototype does not capture screenshots, read image files, run OCR or ML, or
+connect to League of Legends. Screenshot capture and calibration UI are later
+MVP work.
