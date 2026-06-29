@@ -109,3 +109,9 @@ does nothing for repeated states or `unknown`.
 
 It is currently covered by unit tests with fake focus actions. It does not poll
 the screen, run as a daemon, or provide pause/status UI yet.
+
+## Manual Windows QA
+
+Use [docs/manual-windows-qa.md](docs/manual-windows-qa.md) to verify the release
+on Windows. Run the substitute-window check before testing beside League of
+Legends.

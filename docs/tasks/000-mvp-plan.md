@@ -120,3 +120,4 @@ Success criteria:
 Verification:
 - Execute the checklist once with a substitute window before testing with the
   game.
+- Checklist location: `docs/manual-windows-qa.md`.
