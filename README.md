@@ -99,3 +99,13 @@ calibrated `alive` and `dead` reference samples and returns `alive`, `dead`, or
 This prototype does not capture screenshots, read image files, run OCR or ML, or
 connect to League of Legends. Screenshot capture and calibration UI are later
 MVP work.
+
+## Coordinator Prototype
+
+The coordinator prototype connects detector states to focus actions without
+running a background service. It calls browser focus once when state changes to
+`dead`, calls game focus once when state changes from `dead` to `alive`, and
+does nothing for repeated states or `unknown`.
+
+It is currently covered by unit tests with fake focus actions. It does not poll
+the screen, run as a daemon, or provide pause/status UI yet.

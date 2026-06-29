@@ -39,6 +39,8 @@ Planned unit coverage:
 - Coordinator switches to browser once for `alive -> dead`.
 - Coordinator switches back once for `dead -> alive`.
 - Coordinator does nothing for repeated states or `unknown`.
+- Coordinator preserves the last confirmed `alive` or `dead` state across
+  `unknown`, so noisy detector samples do not cause repeated focus switching.
 
 ## Manual Windows QA
 
