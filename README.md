@@ -48,3 +48,15 @@ Expected output includes:
 ```text
 league-rest smoke ok
 ```
+
+## Install From A GitHub Release On Windows
+
+Download `league_rest-0.1.0-py3-none-any.whl` from the GitHub Release, then run:
+
+```powershell
+py -m pip install .\league_rest-0.1.0-py3-none-any.whl
+league-rest --smoke
+```
+
+This wheel is a Python package that installs a `league-rest` console command.
+It is not a standalone `.exe` or `.msi` installer.

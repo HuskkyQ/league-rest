@@ -13,5 +13,8 @@ dependencies = []
 [project.optional-dependencies]
 dev = ["pytest"]
 
+[project.scripts]
+league-rest = "league_rest.__main__:main"
+
 [tool.setuptools.packages.find]
 where = ["src"]
